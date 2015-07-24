@@ -12,3 +12,10 @@ def quickSort(input = []):
 
 sortedList = quickSort([2, 5,1, 7, 9, 3, 19, 7, 3, 8])
 print(sortedList)
+
+input = []
+fh = open('input.txt','r')
+for line in fh.readlines():
+    input.append(int(line.strip()))
+
+print(quickSort(input))
